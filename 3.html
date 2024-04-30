@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>블레스 넷 베타</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1><a href="index.html"> HTML 공부</a></h1>
+  <h2> BLESS NET 경쟁사 홈페이지</a></h2>
+  <ol>
+    <li><a href="https://www.bucketplace.com/" target="_blank" title="오늘의 집"> 경쟁사 1 오늘의 집<a></li>
+    <li><a href="https://www.daangn.com/" target="_blank" title="당근"> 경쟁사 2 당근<a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank" title="디시인사이드"> 경쟁사 3 디시인사이드<a></li>
+    </ol>
+  <h2> 각 플랫폼 세부 정리<h2>
+  <ol>
+   <li><a href="1.html"> 오늘의집 정리</li></a>
+   <li><a href="2.html"> 당근 정리</li></a>
+   <li><a href="3.html"> 디시인사이드 정리</li></a>
+  </ol>
+  
+  <a href="https://www.dcinside.com/" target="_blank" title="디시인사이드"><h2>디시인사이드</h2></a>
+  <img src="디시인사이드.jpg" width="50%">
+  <h2>회사소개</h2>
+    <h3>커뮤니티 포털 디시인사이드는 <u>대한민국 대표 커뮤니티</u>로서 인터넷 문화의 한 축을 담당해 왔습니다. <p>현재 PC와 모바일을 통해<u>갤러리, 마이너 갤러리, 갤로그 등</u> 다양한 서비스를 제공하고 있으며.</p><u>국내 최고 커뮤니티 사이트</u>로 자기매김하고 있습니다.</h3><br>
+    
+    <br><br><h3>주요 서비스</h3>
+    <img src="디시주요서비스.PNG" width="80%">
+
+    <br><br><h3>제휴 안내</h3>
+    <img src="디시제휴.PNG" width="80%">
+
+    <br><br><h3>최초 홈페이지</h3>
+    <img src="디시최초홈페이지.PNG" width="80%">
+    
+    <br><br><h3>NFT(대체불가능?)</h3>
+    <img src="디시NFT.PNG" width="80%">
+
+
+
+
+
+
+
+
+<br><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*html의 color-mode 속성이 light이면 light모드 dark면 dark모드*/
+        :root[color-mode="light"] {
+            background:#efefef;
+            color:#222222;
+        }
+        :root[color-mode="dark"] {
+            background:#222222;
+            color:#efefef;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="darkmodeToggle()">다크모드 토글</button>
+    <p>Set color</p>
+    <script>
+      const mode = window.localStorage.getItem('isDarkmode');
+      if(!!mode) { // 저장된 다크모드 여부
+        document.documentElement.setAttribute('color-mode',mode);
+      }
+      else { // 저장된 다크모드 여부가 없다면 OS가 쓰는 다크모드 가져오기
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('color-mode', 'dark');
+        }
+        else {
+          document.documentElement.setAttribute('color-mode', 'light');
+        }
+      }
+    </script>
+</body>
+</html>

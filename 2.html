@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>블레스 넷 베타</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1><a href="index.html"> HTML 공부</a></h1>
+  <h2> BLESS NET 경쟁사 홈페이지</a></h2>
+  <ol>
+    <li><a href="https://www.bucketplace.com/" target="_blank" title="오늘의 집"> 경쟁사 1 오늘의 집<a></li>
+    <li><a href="https://www.daangn.com/" target="_blank" title="당근"> 경쟁사 2 당근<a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank" title="디시인사이드"> 경쟁사 3 디시인사이드<a></li>
+    </ol>
+  <h2> 각 플랫폼 세부 정리<h2>
+  <ol>
+   <li><a href="1.html"> 오늘의집 정리</li></a>
+   <li><a href="2.html"> 당근 정리</li></a>
+   <li><a href="3.html"> 디시인사이드 정리</li></a>
+  </ol>
+  
+  <a href="https://www.daangn.com/" target="_blank" title="당근"><h2>당근</h2></a>
+  <img src="당근로고.png" width="50%">
+  <h2>회사소개</h2>
+    <h3><u>이웃과 더 가까워지는</u> <p><u>따뜻한 동네</u>를 만들어요.</p></h3><br>
+    <h4>우리 동네 이웃 5명 중 3명은 당근으로 이웃과 함께하고 있습니다.<br>중고 직거래로 시작한 당근은 이웃과 이웃,<br><p> 흩어져 있던 정보를 연결하며<br>세상에 없던 지역 기반 커뮤니티 서비스를 만들어 나가고 있어요.<br></p>우리는 사용자 가치를 가장 중요하게 생각해요.<br><h4>
+    
+    <br><br><h2>중고거래에서 하나의 커뮤니티로 방향성을 잡은 듯?</h2>
+    <img src="당근 방향성.PNG" width="80%">
+
+    <br><br><h2>당근 성장 현황</h2>
+    <img src="당근성장현황.PNG" width="80%">
+
+    <br><br><h2>팀 문화 </h2>
+    <img src="당근팀문화.PNG" width="80%">
+    <img src="당근팀문화2.PNG" width="80%">
+    
+    <br><br><h2>중고거래(너무 아이덴티티가 깊이 밖힌 느낌이랄까)</h2>
+    <img src="당근중고1.PNG" width="80%">
+    <img src="당근 중고2.PNG" width="80%">
+
+  <h1> 객관적으로 쇼핑몰처럼 보일 것 같긴한데..</h1>
+
+
+
+
+
+
+
+<br><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*html의 color-mode 속성이 light이면 light모드 dark면 dark모드*/
+        :root[color-mode="light"] {
+            background:#efefef;
+            color:#222222;
+        }
+        :root[color-mode="dark"] {
+            background:#222222;
+            color:#efefef;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="darkmodeToggle()">다크모드 토글</button>
+    <p>Set color</p>
+    <script>
+      const mode = window.localStorage.getItem('isDarkmode');
+      if(!!mode) { // 저장된 다크모드 여부
+        document.documentElement.setAttribute('color-mode',mode);
+      }
+      else { // 저장된 다크모드 여부가 없다면 OS가 쓰는 다크모드 가져오기
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('color-mode', 'dark');
+        }
+        else {
+          document.documentElement.setAttribute('color-mode', 'light');
+        }
+      }
+    </script>
+</body>
+</html>

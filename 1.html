@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>블레스 넷 베타</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1><a href="index.html"> HTML 공부</a></h1>
+  <h2> BLESS NET 경쟁사 홈페이지</a></h2>
+  <ol>
+    <li><a href="https://www.bucketplace.com/" target="_blank" title="오늘의 집"> 경쟁사 1 오늘의 집<a></li>
+    <li><a href="https://www.daangn.com/" target="_blank" title="당근"> 경쟁사 2 당근<a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank" title="디시인사이드"> 경쟁사 3 디시인사이드<a></li>
+    </ol>
+  <h2> 각 플랫폼 세부 정리<h2>
+  <ol>
+   <li><a href="1.html"> 오늘의집 정리</li></a>
+   <li><a href="2.html"> 당근 정리</li></a>
+   <li><a href="3.html"> 디시인사이드 정리</li></a>
+  </ol>
+  
+  <a href="https://ohou.se/" target="_blank" title="오늘의집"><h2>오늘의 집</h2></a>
+  <img src="오늘의집.png" width="350">
+  <h2>회사소개</h2>
+    <h3><u>"이렇게 살아보고 싶다"는</u> <p><u>전 세계 사람들의 꿈</u>을 현실로 만듭니다.</p></h3><br>
+    <h4>꿈꿔왔던 시간을 공간에 담는 여정.<br>우리는 라이프스타일을 이렇게 정의합니다.<br><p>나의 취향을 발견하고, 좋아하는 것들로 일상을 채우는 것은<br>삶을 더 풍요롭고 의미 있게 만드는 것과 같기 때문입니다.<br></p>오늘의집은 자신의 취향을 가진 커뮤니티 유저들과 함께<br>영감을 발산하는 콘텐츠와 일상 실현을 돕는 커머스를 연결하여<br>각자가 원하는 라이프스타일을 쉽게, 편하게, 즐겁게 만들어가도록 돕습니다.<h4>
+    
+    <br><br><h2>오늘의집 연혁</h2>
+    <img src="오늘의집연혁.PNG" width="80%">
+
+    <br><br><h2>오늘의집 최초 홈페이지</h2>
+    <img src="오늘의집최초홈페이지.PNG" width="80%">
+
+    <br><br><h2>카테고리 및 광고시스템</h2>
+    <img src="카테고리 및 광고시스템.PNG" width="80%">
+    
+    <br><br><h2>채널(해시태그?)</h2>
+    <img src="채널시스템.PNG" width="80%">
+
+
+
+
+
+
+
+
+<br><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*html의 color-mode 속성이 light이면 light모드 dark면 dark모드*/
+        :root[color-mode="light"] {
+            background:#efefef;
+            color:#222222;
+        }
+        :root[color-mode="dark"] {
+            background:#222222;
+            color:#efefef;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="darkmodeToggle()">다크모드 토글</button>
+    <p>Set color</p>
+    <script>
+      const mode = window.localStorage.getItem('isDarkmode');
+      if(!!mode) { // 저장된 다크모드 여부
+        document.documentElement.setAttribute('color-mode',mode);
+      }
+      else { // 저장된 다크모드 여부가 없다면 OS가 쓰는 다크모드 가져오기
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('color-mode', 'dark');
+        }
+        else {
+          document.documentElement.setAttribute('color-mode', 'light');
+        }
+      }
+    </script>
+</body>
+</html>
